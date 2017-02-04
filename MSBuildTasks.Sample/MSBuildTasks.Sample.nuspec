@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>MSBuildTasks.Sample</id>
+    <version>$version$</version>
+    <description>MSBuildTasks.Sample</description>
+    <authors>MSBuildTasks.Sample</authors>
+    <owners>MSBuildTasks.Sample</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+  </metadata>
+  <files>
+    <file src="bin/$configuration$/netstandard1.3/MSBuildTasks.Sample.dll" target="tasks/netstandard1.3/MSBuildTasks.Sample.dll" />
+    <file src="lib/any/_._" target="lib/any/_._" />
+    <file src="build/MSBuildTasks.Sample.props" target="build/MSBuildTasks.Sample.props" />
+  </files>
+</package>
