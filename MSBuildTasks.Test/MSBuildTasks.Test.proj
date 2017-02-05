@@ -13,7 +13,7 @@
   <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" />
 
   <Target Name="Build" >
-    <SampleTask />
+    <SayHello />
   </Target>
 
 </Project>

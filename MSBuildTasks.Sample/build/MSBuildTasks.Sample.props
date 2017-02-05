@@ -4,5 +4,5 @@
     <_SampleTaskAssembly>$(MSBuildThisFileDirectory)..\tasks\netstandard1.3\MSBuildTasks.Sample.dll</_SampleTaskAssembly>
   </PropertyGroup>
 
-  <UsingTask TaskName="MSBuildTasks.Sample.SampleTask" AssemblyName="$(_SampleTaskAssembly)" />
+  <UsingTask TaskName="MSBuildTasks.SayHello" AssemblyFile="$(_SampleTaskAssembly)" />
 </Project>

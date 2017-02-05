@@ -1,13 +1,13 @@
 using Microsoft.Build.Framework;
 using MSBuildTask = Microsoft.Build.Utilities.Task;
 
-namespace MSBuildTasks.Sample
+namespace MSBuildTasks
 {
-    public class SimpleTask : MSBuildTask
+    public class SayHello : MSBuildTask
     {
         public override bool Execute()
         {
-            Log.LogMessage("I always pass", MessageImportance.High);
+            Log.LogMessage("Aloha", MessageImportance.High);
             return true;
         }
     }
