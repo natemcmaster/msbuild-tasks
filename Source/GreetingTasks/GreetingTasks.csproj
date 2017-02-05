@@ -3,10 +3,11 @@
   <PropertyGroup>
     <TargetFramework>netstandard1.3</TargetFramework>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <PackageOutputPath>$(MSBuildThisFileDirectory)..\artifacts\</PackageOutputPath>
-    <NuspecFile>$(MSBuildThisFileDirectory)MSBuildTasks.Sample.nuspec</NuspecFile>
+    <PackageOutputPath>$(MSBuildThisFileDirectory)..\..\artifacts\</PackageOutputPath>
+    <NuspecFile>$(MSBuildThisFileDirectory)GreetingTasks.nuspec</NuspecFile>
     <NoPackageAnalysis>true</NoPackageAnalysis>
     <VersionPrefix>0.1.0</VersionPrefix>
+    <VersionSuffix>build$([System.DateTime]::Now.ToString('yyyyMMdd-HHmm'))</VersionSuffix>
     <DisableImplicitFrameworkReferences>true</DisableImplicitFrameworkReferences>
   </PropertyGroup>
 

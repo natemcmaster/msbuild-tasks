@@ -1,8 +1,9 @@
 <!-- this file is automatically imported by nuget into a user's project -->
 <Project>
   <PropertyGroup>
-    <_SampleTaskAssembly>$(MSBuildThisFileDirectory)..\tasks\netstandard1.3\MSBuildTasks.Sample.dll</_SampleTaskAssembly>
+    <_SampleTaskAssembly>$(MSBuildThisFileDirectory)..\tasks\netstandard1.3\GreetingTasks.dll</_SampleTaskAssembly>
   </PropertyGroup>
 
   <UsingTask TaskName="MSBuildTasks.SayHello" AssemblyFile="$(_SampleTaskAssembly)" />
+  <UsingTask TaskName="MSBuildTasks.SayThankYou" AssemblyFile="$(_SampleTaskAssembly)" />
 </Project>

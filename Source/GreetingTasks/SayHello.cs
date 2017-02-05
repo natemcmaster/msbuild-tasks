@@ -7,7 +7,7 @@ namespace MSBuildTasks
     {
         public override bool Execute()
         {
-            Log.LogMessage("Aloha", MessageImportance.High);
+            Log.LogMessage(MessageImportance.High, "Aloha");
             return true;
         }
     }

@@ -1,7 +1,0 @@
-<Project>
-  <Target Name="Build">
-    <RemoveDir Directories="artifacts/;packages/" />
-    <MSBuild Projects="MSBuildTasks.Sample\MSBuildTasks.Sample.csproj" Targets="Restore;Build" />
-    <MSBuild Projects="MSBuildTasks.Test\MSBuildTasks.Test.proj" Targets="Restore;Build" />
-  </Target>
-</Project>

@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>GreetingTasks</id>
+    <version>$version$</version>
+    <description>GreetingTasks</description>
+    <authors>GreetingTasks</authors>
+    <owners>GreetingTasks</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+  </metadata>
+  <files>
+    <file src="bin/$configuration$/netstandard1.3/GreetingTasks.dll" target="tasks/netstandard1.3/GreetingTasks.dll" />
+    <file src="build/GreetingTasks.props" target="build/GreetingTasks.props" />
+  </files>
+</package>
