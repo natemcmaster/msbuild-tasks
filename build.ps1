@@ -4,4 +4,4 @@ function exec($cmd) {
 }
 
 exec dotnet build compile.proj
-exec dotnet build Example/
+exec dotnet build Example
