@@ -3,7 +3,7 @@
   <PropertyGroup>
     <TargetFramework>netcoreapp1.0</TargetFramework>
     <RestoreSources>$(MSBuildThisFileDirectory)..\artifacts\</RestoreSources>
-    <RestorePackagesPath>$(MSBuildThisFileDirectory)packages\</RestorePackagesPath>
+    <RestorePackagesPath>$(MSBuildThisFileDirectory)..\packages\</RestorePackagesPath>
   </PropertyGroup>
 
   <ItemGroup>
