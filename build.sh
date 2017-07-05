@@ -1,13 +1,22 @@
 #!/usr/bin/env bash
+
+set -eu
+
 CYAN='\033[0;36m'
 NC='\033[0m'
 
 __exec() {
-    local cmd=$1
+    local cmd=${1:0}
     shift
     echo -e "${CYAN} > $cmd $@${NC}"
     $cmd $@
 }
 
-__exec dotnet build compile.proj
-__exec dotnet build Example
+rm -r artifacts/
+rm -r Example/obj/
+rm -r Source/GreetingTasks/obj/
+
+__exec dotnet restore ./Source/GreetingTasks/
+__exec dotnet build ./Source/GreetingTasks/
+__exec dotnet restore ./Example/
+__exec dotnet msbuild /nologo '/t:Greet;Thank' ./Example/

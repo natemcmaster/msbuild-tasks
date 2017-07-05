@@ -6,5 +6,5 @@ with "dotnet.exe" (.NET Core CLI on Windows, Linux, and macOS).
 
 To run this sample,
 
-1. Install .NET Core CLI 1.0.0-rc4-004767 or greater. See <https://github.com/dotnet/cli> for download links.
-2. Run build.ps1 (Windows) or build.sh (macOS, Linux)
+1. Install .NET Core CLI 1.0.0 or greater. See <https://dot.net/core> for download links.
+2. Run `./build.ps1` in PowerShell or `./build.sh` from Bash.
