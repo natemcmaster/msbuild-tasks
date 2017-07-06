@@ -2,13 +2,13 @@
   This file is automatically imported by NuGet into a user's project
   when it targets a single framework, or in classic (pre 2017) csproj projects.
 -->
-<Project>
+<Project TreatAsLocalProperty="TaskFolder;TaskAssembly">
   <PropertyGroup>
-    <_SampleTaskTfm Condition=" '$(MSBuildRuntimeType)' == 'Core' ">netstandard1.6</_SampleTaskTfm>
-    <_SampleTaskTfm Condition=" '$(MSBuildRuntimeType)' != 'Core' ">net46</_SampleTaskTfm>
-    <_SampleTaskAssembly>$(MSBuildThisFileDirectory)..\tasks\$(_SampleTaskTfm)\GreetingTasks.dll</_SampleTaskAssembly>
+    <TaskFolder Condition=" '$(MSBuildRuntimeType)' == 'Core' ">netstandard1.6</TaskFolder>
+    <TaskFolder Condition=" '$(MSBuildRuntimeType)' != 'Core' ">net46</TaskFolder>
+    <TaskAssembly>$(MSBuildThisFileDirectory)..\tasks\$(TaskFolder)\GreetingTasks.dll</TaskAssembly>
   </PropertyGroup>
 
-  <UsingTask TaskName="MSBuildTasks.SayHello" AssemblyFile="$(_SampleTaskAssembly)" />
-  <UsingTask TaskName="MSBuildTasks.SayThankYou" AssemblyFile="$(_SampleTaskAssembly)" />
+  <UsingTask TaskName="MSBuildTasks.SayHello" AssemblyFile="$(TaskAssembly)" />
+  <UsingTask TaskName="MSBuildTasks.SayThankYou" AssemblyFile="$(TaskAssembly)" />
 </Project>
