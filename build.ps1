@@ -1,9 +1,9 @@
 #!/usr/bin/env powershell
 $ErrorActionPreference = 'Stop'
 
-function exec($cmd) {
-    write-host " > $cmd $args" -ForegroundColor cyan
-    & $cmd @args
+function exec($_cmd) {
+    write-host " > $_cmd $args" -ForegroundColor cyan
+    & $_cmd @args
     if ($LASTEXITCODE -ne 0) {
         throw 'Command failed'
     }
