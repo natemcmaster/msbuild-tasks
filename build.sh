@@ -17,6 +17,6 @@ rm -r Example/obj/
 rm -r Source/GreetingTasks/obj/
 
 __exec dotnet restore ./Source/GreetingTasks/
-__exec dotnet build ./Source/GreetingTasks/
+__exec dotnet pack -c Release ./Source/GreetingTasks/
 __exec dotnet restore ./Example/
 __exec dotnet msbuild /nologo '/t:Greet;Thank' ./Example/

@@ -14,6 +14,6 @@ Remove-Item Source/GreetingTasks/obj/ -Recurse -ErrorAction Ignore
 Remove-Item Example/obj/ -Recurse -ErrorAction Ignore
 
 exec dotnet restore ./Source/GreetingTasks/
-exec dotnet build ./Source/GreetingTasks/
+exec dotnet pack -c Release ./Source/GreetingTasks/
 exec dotnet restore ./Example/
 exec dotnet msbuild /nologo '/t:Greet;Thank' ./Example/
